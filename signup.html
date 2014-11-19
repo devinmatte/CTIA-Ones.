@@ -24,6 +24,15 @@
 			<link rel="stylesheet" href="css/style-desktop.css" />
 			<link rel="stylesheet" href="css/style-noscript.css" />
 		</noscript>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+ 		 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+ 		 <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+ 		 <link rel="stylesheet" href="/resources/demos/style.css">
+         <script>
+  $(function() {
+    $( "#datepicker" ).datepicker();
+  });
+  		</script>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	</head>
 	<body class="homepage">
@@ -31,18 +40,24 @@
 		<!-- Banner -->
 			<section id="banner">
 				<header>
-					<h2>Sign In</h2>
+					<h2>Sign Up</h2>
 					<p>
 						<form action="home.html">
-<input type="text" name="firstname" placeholder="Username/Email Address">
+<input type="text" name="firstName" placeholder="First Name">
+<input type="text" name="lastname" placeholder="Last Name">
 <br>
-<input type="text" name="lastname" placeholder="Password">
+<input type="text" name="email" placeholder="Email Address">
+<input type="text" name="emailconfirm" placeholder="Confirm Email Address">
 <br>
+<input type="password" name="password" placeholder="Password">
+<input type="password" name="password" placeholder="Confirm Password">
+<br>
+<input type="text" id="datepicker">
 <input type="submit" value="Submit">
 </form>
 					</p>
                     <p>
-                    Don't have an account? <a href="signup.html">Sign up</a>
+                    Already have an account? <a href="sign in.html">Sign in</a>
                     </p>
 				</header>
 			</section>
